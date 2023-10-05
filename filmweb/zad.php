@@ -28,7 +28,15 @@ $polaczenia = mysqli_connect($severname, $username, $password, $database);
          }
          echo "</select>";}
     ?>
-        <input type="submit">
+
+
+
+
+<input type="submit">
+
+
+
+
         <?php
 
 $severname = "localhost";
@@ -52,7 +60,14 @@ $wynik = mysqli_query($polaczenia, "SELECT `ocena`, `film` from `filmweb` where 
 };
 
 ?>
+ </form>
+<form action='3.php' method=POST>
+<input type='text' name='nazwa' placeholder='nazwa'>
+<input type='number' min=0 max=10 name='liczba'>
+<input type='submit'>
 
-    </form>
+</form>
+
+   
 </body>
 </html>
